@@ -1,6 +1,14 @@
+//Back end logic ///////////////////////////////////////
+function PizzaMenu() {
+  this.pizzaOrder = [],
+}
+
+PizzaMenu.prototype.addTopping = function(toppings) {
+
+}
+
 
 ////////////////////// user Interface///////////////////
-//var pizzaOrder = new Pizza();
 
 $(document).ready(function() {
   $("form#toppings").submit(function(event) {
@@ -21,6 +29,8 @@ $("form#pizzaSize").submit(function(event) {
     $('#selected-size').append(selectedPizzaSize + "<br>");
   });
   $('#pizzaSize').hide();
+
+  var newOrder = new Order
   });
 
 });

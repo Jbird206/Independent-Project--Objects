@@ -2,8 +2,24 @@ body {
   background-color: bisque;
 }
 
+img {
+  border-radius: 50%;
+}
+
+.center {
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+}
+
+.container2 {
+  background-color: beige;
+}
+
 .jumbotron2 {
   background-color: beige;
+  box-shadow: 5px;
 }
 
 h1 {
