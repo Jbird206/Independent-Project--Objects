@@ -1,3 +1,16 @@
 body {
   background-color: bisque;
 }
+
+.jumbotron2 {
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+
+h2 {
+  text-align: center;
+}
