@@ -16,23 +16,27 @@
   <h2>List your Pizza topping and size below.</h2>
   <hr><hr>
   <h3>Toppings</h3>
-  <form>
-  <input type="checkbox" name="pepperoni" value="meat"> pepperoni <br>
-  <input type="checkbox" name="sausage" value="meat"> sausage <br>
-  <input type="checkbox" name="smoked oysters" value="meat"> smoked oysters <br>
-  <input type="checkbox" name="anchovies" value="meat"> anchovies <br>
+  <form id="toppings">
+  <input type="checkbox" name="pizza-toppings" value="pepperoni" id="toppingPepp"> pepperoni <br>
+  <input type="checkbox" name="pizza-toppings" value="sausage" id="toppingSasg"> sausage <br>
+  <input type="checkbox" name="pizza-toppings" value="oysters" id="toppingOyst"> smoked oysters <br>
+<input type="checkbox" name="pizza-toppings" value="anchovies" id="toppingAnch"> anchovies <br>
+<button type="submit">Add your toppings</button>
 </form>
+<span id="selected-toppings">
+  <p><b>You've selected the following toppings:</b></p>
+</span>
 <hr>
 <h3>Size</h3>
-<form>
+<form id ="pizzaSize">
   <select name="size">
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="Large">Large</option>
-    <option value="XL">XL</option>
+    <option value="small" id="smallPizza">Small</option>
+    <option value="medium" id="mediumPizza">Medium</option>
+    <option value="Large" id="largePizza">Large</option>
+    <option value="XL" id="XLPizza">XL</option>
   </select>
   <br><br>
-  <input type="submit">
+  <input type="Order">
 </form>
 
 

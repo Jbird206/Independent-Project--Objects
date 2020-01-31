@@ -29,3 +29,22 @@
 //
 //   });
 // });
+////////////////////// user Interface///////////////////
+//var pizzaOrder = new Pizza();
+
+$(document).ready(function() {
+  attachPizzaListeners();
+  $("form#toppings").submit(function(event) {
+    event.preventDeafault();
+$("input:checkbox[name=pepperoni]:checked").each(function(){
+  var pepperoni =$(this).val();
+
+
+
+    var inputToppingPep = $("input#toppingPepp").val();
+    var inputToppingSasg = $("input#toppingSasg").val();
+    var inputToppingOyst = $("input#toppingOyst").val();
+    var inputToppingAnch = $("input#toppingAnch").val();
+
+  }
+}
