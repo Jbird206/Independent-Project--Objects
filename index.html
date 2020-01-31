@@ -28,17 +28,15 @@
 </span>
 <hr>
 <h3>Size</h3>
-<form id ="pizzaSize">
-  <select name="size">
-    <option value="small" id="smallPizza">Small</option>
-    <option value="medium" id="mediumPizza">Medium</option>
-    <option value="Large" id="largePizza">Large</option>
-    <option value="XL" id="XLPizza">XL</option>
-  </select>
-  <br><br>
-  <input type="Order">
+<form id="pizzaSize">
+<input type="checkbox" name="size-selected" value="small" id="smallSize"> Small <br>
+<input type="checkbox" name="size-selected" value="medium" id="mediumSize"> Medium <br>
+<input type="checkbox" name="size-selected" value="large" id="largeSize"> Large <br>
+<input type="checkbox" name="size-selected" value="XL" id="XLSize"> XL <br>
+<button type="submit">Select size</button>
 </form>
-
-
+<span id="selected-size">
+<p><b>You've added the following sized pizza</b></p>
+</span>
     </body>
 </html>
