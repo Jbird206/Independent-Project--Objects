@@ -1,16 +1,28 @@
 //Back end logic ///////////////////////////////////////
-function PizzaMenu() {
-  this.pizzaOrder = [],
+//Constructor function ///////////////////////
+$(document).ready(function() {
+  function Pizza() {
+    this.toppings[],
+    this.size = []
+  }
+
+
+var myPizzaOrder = new Pizza("topping","size");
+
+function totalPrice(){
+  return toppingTotal + sizeTotal;
 }
 
-PizzaMenu.prototype.addTopping = function(toppings) {
+//display it///
 
-}
-
+$("#formOne").click(function(event){
+  event.preventDefault();
+  $("#formOne").text(totalPrice());
+})
 
 ////////////////////// user Interface///////////////////
 
-$(document).ready(function() {
+
   $("form#toppings").submit(function(event) {
     event.preventDefault();
     $("#selected-toppings").show();
